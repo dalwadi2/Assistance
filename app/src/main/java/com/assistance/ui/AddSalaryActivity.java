@@ -1,4 +1,4 @@
-package com.assistance;
+package com.assistance.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.assistance.R;
 import com.assistance.db.Person;
 import com.assistance.db.Salary;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;

@@ -3,7 +3,7 @@ apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.2"
+    buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.assistance"
         minSdkVersion 19
@@ -36,5 +36,7 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     compile 'com.afollestad.material-dialogs:commons:0.9.6.0'
     testCompile 'junit:junit:4.12'
+//    debugCompile 'com.facebook.stetho:stetho:1.5.0'
+//    debugCompile 'com.uphyca:stetho_realm:2.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }

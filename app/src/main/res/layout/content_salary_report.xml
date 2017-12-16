@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.assistance.ui.SalaryReport"
+    tools:showIn="@layout/activity_salary_report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_from_date_s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#26A69A"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="From Date"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_to_date_s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="#26A69A"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="To Date"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_select_person_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FF8A65"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Person"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_total_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textStyle="italic" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <ProgressBar
+            android:id="@+id/pb_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_salary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_salary" />
+    </FrameLayout>
+</LinearLayout>

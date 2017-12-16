@@ -1,4 +1,4 @@
-package com.assistance;
+package com.assistance.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.assistance.R;
 import com.assistance.db.Person;
 
 import java.util.UUID;
@@ -47,10 +48,13 @@ public class DashboardActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_att_report:
+                startActivity(AttendanceReport.class);
                 break;
             case R.id.ll_salary_report:
+                startActivity(SalaryReport.class);
                 break;
             case R.id.ll_add_att:
+                startActivity(AttendanceActivity.class);
                 break;
             case R.id.ll_add_person:
                 addPerson();
